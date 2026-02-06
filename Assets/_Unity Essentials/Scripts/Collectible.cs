@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
+    public float rotationSpeed;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +13,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, 0.5f);
+        transform.Rotate(0, 0, rotationSpeed);
     }
 }
